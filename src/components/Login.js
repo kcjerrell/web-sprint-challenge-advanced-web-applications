@@ -71,11 +71,11 @@ const Login = () => {
 
           <form onSubmit={handleSubmit}>
             <label>Username:
-              <input type="text" name="username" value={formData.username} onChange={handleChange} data-testid="username" />
+              <input type="text" name="username" value={formData.username} onChange={handleChange} id="username" test-id="username" />
             </label>
             <label>
               Password:
-              <input type="password" name="password" value={formData.password} onChange={handleChange} data-testid="password" />
+              <input type="password" name="password" value={formData.password} onChange={handleChange} id="password" test-id="password" />
             </label>
             <input type="submit" value={"Login"} />
           </form>
