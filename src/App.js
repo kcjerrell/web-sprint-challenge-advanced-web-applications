@@ -8,8 +8,6 @@ import { removeToken } from "./helpers/axiosWithAuth";
 import "./styles.scss";
 
 function App() {
-  const history = useHistory();
-
   const logOut = (e) => {
     removeToken();
   }

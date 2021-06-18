@@ -66,17 +66,21 @@ const Login = () => {
   return (
     <div>
       <h1>Welcome to the Bubble App!</h1>
-      <Container data-testid="loginForm">
-        <form onSubmit={handleSubmit}>
-          <label>Username:
-            <input type="text" name="username" value={formData.username} onChange={handleChange} data-testid="username" />
-          </label>
-          <label>
-            Password:
-            <input type="password" name="password" value={formData.password} onChange={handleChange} data-testid="password" />
-          </label>
-          <input type="submit" value={"Login"} />
-        </form>
+      <Container>
+        <div data-testid="loginForm" className="login-form">
+
+          <form onSubmit={handleSubmit}>
+            <label>Username:
+              <input type="text" name="username" value={formData.username} onChange={handleChange} data-testid="username" />
+            </label>
+            <label>
+              Password:
+              <input type="password" name="password" value={formData.password} onChange={handleChange} data-testid="password" />
+            </label>
+            <input type="submit" value={"Login"} />
+          </form>
+
+        </div>
       </Container>
 
       <p data-testid="errorMessage" className="error">{error}</p>
