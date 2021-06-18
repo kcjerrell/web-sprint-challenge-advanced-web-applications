@@ -59,7 +59,7 @@ const Login = () => {
         history.push("/bubblepage")
       })
       .catch((error) => {
-        setError("Username or Password not valid")
+        setError("Username or Password not valid.")
       });
   }
 
