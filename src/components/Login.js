@@ -67,7 +67,7 @@ const Login = () => {
     <div>
       <h1>Welcome to the Bubble App!</h1>
       <Container>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} data-testid="loginForm">
           <label>Username:
             <input type="text" name="username" value={formData.username} onChange={handleChange} data-testid="username" />
           </label>
